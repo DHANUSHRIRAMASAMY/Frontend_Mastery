@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffe4b3;
+}
+
+header {
+    background-color: orange;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    background-color: black;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+}
+
+nav a:hover {
+    background-color: orange;
+    color: black;
+}
+
+section {
+    padding: 30px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+#book-table {
+    background-color: #f9f9f9;
+    width: 50%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+#book-table h2 {
+    text-align: center;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: orange;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: darkorange;
+}
