@@ -29,6 +29,13 @@ header p {
     margin-bottom: 30px;
 }
 
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .menu-card {
     width: 300px;
     background-color: white;
@@ -50,4 +57,23 @@ header p {
 .menu-card h4 {
     color: orange;
     font-size: 22px;
+}
+
+.menu-card {
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+}
+@media (max-width: 768px) {
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        width: 100%;
+    }
+
 }

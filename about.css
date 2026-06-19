@@ -73,3 +73,16 @@ header p {
     background-color: #ffe4b3;
 }
 
+@media (max-width: 768px) {
+    #about {
+        width: 90%;
+        padding: 20px;
+    }
+    #about h2 {
+        font-size: 28px;
+    }
+    #about p {
+        font-size: 16px;
+    }
+
+}

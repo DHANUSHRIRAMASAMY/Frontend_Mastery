@@ -33,3 +33,14 @@ Designed menu cards to display food items in an organized way
 Created a reservation form with fields like name, phone number, email, date, time, and number of guests
 Added an About Us page with restaurant details
 Added a Contact Us page with restaurant information for users
+
+_________________________________________________________________________________________________________________________________
+
+Day 4 (19/06/26)
+CSS Layout & Responsive Design
+Learned the fundamentals of Flexbox layout.
+Used "display: flex" to arrange elements in a structured manner.
+Practiced Flexbox properties such as "justify-content", "gap", and "flex-wrap".
+Learned responsive units like "%", "vw", "vh", and "rem".
+Studied Media Queries using "@media (max-width: 768px)".
+Refined the project and committed the changes to GitHub.
