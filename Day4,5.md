@@ -44,3 +44,38 @@ Practiced Flexbox properties such as "justify-content", "gap", and "flex-wrap".
 Learned responsive units like "%", "vw", "vh", and "rem".
 Studied Media Queries using "@media (max-width: 768px)".
 Refined the project and committed the changes to GitHub.
+
+Day 5 - Git + Mini Page
+Learned the concept of Git Branches.
+Created a new branch named "feature-menu".
+Updated the Restaurant Website in the new branch.
+Added new menu items to the Menu page.
+Practiced "git status" to check project changes.
+Used "git add ."to stage files.
+Created commits using meaningful commit messages.
+Learned how to use "git push" to upload changes to GitHub.
+Learned how to use "git pull" to fetch the latest changes from GitHub.
+Switched between branches using Git commands.
+Merged the "feature-menu" branch into the main branch.
+## commands
+git checkout -b feature-menu
+git branch
+git status
+git add .
+git commit -m "Updated restaurant website"
+git push origin feature-menu
+git checkout master
+git pull origin master
+git merge feature-menu
+git push origin master
+Built a multi-section Restaurant Website including:
+  * Home Page
+  * Menu Page
+  * About Us Page
+  * Contact Us Page
+Improved the website design using CSS.
+Added hover effects for better user interaction.
+Applied Flexbox for layout management.
+Implemented responsive design using Media Queries.
+Successfully pushed the final project to GitHub.
+
