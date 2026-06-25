@@ -53,3 +53,36 @@ if(count > 5){
 else{
     console.log("Parking Area is Available");   
 }
+
+
+// # JavaScript Loops and Conditional Statements
+
+// ### Conditional Statements
+
+// * **if statement** – Executes a block of code when a condition is true.
+// * **else statement** – Executes a block of code when the condition is false.
+// * **else if statement** – Tests multiple conditions one after another.
+// * **switch statement** – Selects and executes code based on different cases.
+// * **ternary operator** – A short form of if-else written in a single line.
+// * **Nested if...else** – Uses an if-else statement inside another if-else statement.
+
+// ### Loops
+
+// * **for loop** – Repeats a block of code for a specific number of iterations.
+// * **while loop** – Repeats a block of code as long as a condition remains true.
+// * **do...while loop** – Executes a block of code at least once before checking the condition.
+// * **for...in loop** – Iterates through the keys or properties of an object.
+// * **for...of loop** – Iterates through the values of iterable objects such as arrays and strings.
+// * **forEach()** – Executes a function once for each element in an array.
+
+// ### Map
+
+// * **Map** – A collection that stores data in key-value pairs and maintains the insertion order of elements.
+
+// ## Learning Outcomes
+
+// * Learned how to control program flow using conditional statements.
+// * Understood different looping techniques for iterating over data.
+// * Practiced working with arrays, objects, and maps.
+// * Improved problem-solving skills using JavaScript fundamentals.
+// * Gained hands-on experience with real-world programming scenarios.
