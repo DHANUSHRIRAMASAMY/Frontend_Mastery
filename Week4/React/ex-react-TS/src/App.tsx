@@ -1,32 +1,10 @@
-import Header from "./component/Header";
-import StudentCard from "./component/StudentCard";
-import Footer from "./component/Footer";
+import Counter from "./component/Counter";
 
 function App() {
   return (
-    <>
-      <Header />
-
-      <StudentCard
-        name="Dhanushri"
-        age={20}
-        course="Information Technology"
-      />
-
-      <StudentCard
-        name="Rahul"
-        age={21}
-        course="Computer Science"
-      />
-
-      <StudentCard
-        name="Priya"
-        age={19}
-        course="Artificial Intelligence"
-      />
-
-      <Footer />
-    </>
+    <div>
+      <Counter />
+    </div>
   );
 }
 
