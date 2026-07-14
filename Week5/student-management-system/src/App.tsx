@@ -1,45 +1,21 @@
-import { useEffect, useState } from "react";
-import "./App.css";
-
-import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 import SearchBar from "./components/SearchBar";
+import Stats from "./components/Stats";
 import StudentList from "./components/StudentList";
-import Clock from "./components/Clock";
-import Loading from "./components/Loading";
+import Footer from "./components/Footer";
 
 function App() {
-  const [students, setStudents] = useState<string[]>([]);
-  const [search, setSearch] = useState("");
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setStudents(["Rahul", "Priya", "Arun", "Sneha"]);
-      setLoading(false);
-    }, 2000);
-  }, []);
-
-  useEffect(() => {
-    document.title = `Students: ${students.length}`;
-  }, [students]);
-
-  const filteredStudents = students.filter((student) =>
-    student.toLowerCase().includes(search.toLowerCase())
-  );
-
   return (
     <div className="container">
-      <Header />
+      <Navbar />
 
-      <Clock />
+      <SearchBar />
 
-      <SearchBar search={search} setSearch={setSearch} />
+      <Stats />
 
-      {loading ? (
-        <Loading />
-      ) : (
-        <StudentList students={filteredStudents} />
-      )}
+      <StudentList />
+
+      <Footer />
     </div>
   );
 }

@@ -1,18 +1,16 @@
-type Props = {
-  students: string[];
-};
+import StudentCard from "./StudentCard";
+import { students } from "../data/students";
 
-function StudentList({ students }: Props) {
+function StudentList() {
   return (
-    <div>
-      <h2>Students</h2>
-
-      <ul>
-        {students.map((student, index) => (
-          <li key={index}>{student}</li>
-        ))}
-      </ul>
-    </div>
+    <>
+      {students.map((student) => (
+        <StudentCard
+          key={student.id}
+          student={student}
+        />
+      ))}
+    </>
   );
 }
 
