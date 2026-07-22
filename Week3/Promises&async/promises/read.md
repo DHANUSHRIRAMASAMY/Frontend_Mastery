@@ -1,9 +1,5 @@
 # JavaScript Promises
 
-## What is a Promise?
-
-A Promise is an object that represents the eventual completion (or failure) of an asynchronous operation.
-
 ### Syntax
 
 ```javascript
@@ -162,11 +158,3 @@ Promise.allSettled([promise1, promise2]);
 ```
 
 ---
-
-## Advantages
-
-- Better than callbacks
-- Easier error handling
-- Supports chaining
-- Improves code readability
-- Handles asynchronous operations efficiently
