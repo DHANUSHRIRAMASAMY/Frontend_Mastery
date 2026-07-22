@@ -1,0 +1,74 @@
+/* Page Styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Container */
+.app {
+  width: 400px;
+  margin: 40px auto;
+}
+
+/* Form */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px lightgray;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+/* Registered Students Heading */
+h3 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Student Card */
+.student-card {
+  background-color: white;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px lightgray;
+}
+
+/* Student Details */
+.student-card h3 {
+  text-align: left;
+}

@@ -1,0 +1,93 @@
+// 1. Exact String Match
+let pattern = /Dhanu/;
+console.log(pattern.test("Dhanu")); // true
+
+// 2. Lowercase Letter
+let pattern1 = /[a-z]/;
+console.log(pattern1.test("d")); // true
+
+// 3. Uppercase Letter
+let pattern2 = /[A-Z]/;
+console.log(pattern2.test("D")); // true
+
+// 4. Digit
+let pattern3 = /[0-9]/;
+console.log(pattern3.test("5")); // true
+
+// 5. Any Alphabet
+let pattern4 = /[a-zA-Z]/;
+console.log(pattern4.test("D")); // true
+
+// 6. Letter or Digit
+let pattern5 = /[a-zA-Z0-9]/;
+console.log(pattern5.test("7")); // true
+
+// 7. Not a Lowercase Letter
+let pattern6 = /[^a-z]/;
+console.log(pattern6.test("5")); // true
+
+// 8. Digit Shortcut (\d)
+let pattern7 = /\d/;
+console.log(pattern7.test("8")); // true
+
+// 9. Non-Digit Shortcut (\D)
+let pattern8 = /\D/;
+console.log(pattern8.test("D")); // true
+
+// 10. Word Character (\w)
+let pattern9 = /\w/;
+console.log(pattern9.test("_")); // true
+
+// 11. Special Character (\W)
+let pattern10 = /\W/;
+console.log(pattern10.test("@")); // true
+
+// 12. Whitespace Character (\s)
+let pattern11 = /\s/;
+console.log(pattern11.test(" ")); // true
+
+// 13. Non-Whitespace Character (\S)
+let pattern12 = /\S/;
+console.log(pattern12.test("D")); // true
+
+// 14. One or More Digits (+)
+let pattern13 = /[0-9]+/;
+console.log(pattern13.test("123")); // true
+
+// 15. Zero or More Digits (*)
+let pattern14 = /[0-9]*/;
+console.log(pattern14.test("123")); // true
+
+// 16. Optional Character (?)
+// Matches both "Dhanu" and "Dhanuu"
+let pattern15 = /Dhanuu?/;
+console.log(pattern15.test("Dhanu")); // true
+
+// 17. Any Single Character (.)
+// Matches any one character between D and anu
+let pattern16 = /D.anu/;
+console.log(pattern16.test("Dhanu")); // true
+
+// 18. Starts With (^)
+let pattern17 = /^Dhanu/;
+console.log(pattern17.test("Dhanu Ramasamy")); // true
+
+// 19. Ends With ($)
+let pattern18 = /Ramasamy$/;
+console.log(pattern18.test("Dhanu Ramasamy")); // true
+
+// 20. Exactly 3 Digits {3}
+let pattern19 = /^\d{3}$/;
+console.log(pattern19.test("123")); // true
+
+// 21. 3 to 5 Digits {3,5}
+let pattern20 = /^\d{3,5}$/;
+console.log(pattern20.test("1234")); // true
+
+// 22. At Least 3 Digits {3,}
+let pattern21 = /^\d{3,}$/;
+console.log(pattern21.test("123456")); // true
+
+// 23. Email Validation
+let pattern22 = /^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/;
+console.log(pattern22.test("dhanu@gmail.com")); // true
