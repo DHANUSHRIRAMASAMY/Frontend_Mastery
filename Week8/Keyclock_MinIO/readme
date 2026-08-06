@@ -1,0 +1,138 @@
+## Overview
+
+This task focuses on learning the fundamentals of **Keycloak** and **MinIO**, two widely used open-source tools in modern backend and cloud-native applications.
+
+- **Keycloak** is used for Authentication and Authorization.
+- **MinIO** is used for Object Storage to manage files such as images, PDFs, videos, and documents.
+
+---
+
+# Objectives
+
+- Understand what Keycloak is and why it is used.
+- Learn the basic setup of Keycloak.
+- Understand what MinIO is and how object storage works.
+- Perform the basic setup of MinIO.
+- Gain hands-on experience with both tools.
+
+---
+
+# Keycloak
+
+## What is Keycloak?
+
+Keycloak is an open-source Identity and Access Management (IAM) solution. It provides secure authentication and authorization without requiring developers to build login systems from scratch.
+
+## Features
+
+- User Authentication
+- Authorization using Roles
+- Single Sign-On (SSO)
+- User Management
+- Password Management
+- OAuth 2.0 & OpenID Connect Support
+- Social Login Integration
+- JWT Token Generation
+
+## Basic Setup
+
+- Downloaded Keycloak.
+- Extracted the ZIP package.
+- Started the server using:
+
+```cmd
+kc.bat start-dev
+```
+
+- Logged into the Admin Console.
+- Explored the Master Realm.
+- Learned about:
+  - Realms
+  - Clients
+  - Users
+  - Roles
+
+---
+
+# MinIO
+
+## What is MinIO?
+
+MinIO is an open-source Object Storage Server that is compatible with the Amazon S3 API. It is used to store files such as images, PDFs, videos, backups, and other documents.
+
+## Features
+
+- Object Storage
+- Amazon S3 Compatible
+- High Performance
+- Easy Docker Deployment
+- Secure File Storage
+- Bucket Management
+
+## Basic Setup
+
+Started MinIO using Docker:
+
+```cmd
+docker run -d --name minio -p 9000:9000 -p 9001:9001 ^
+-e MINIO_ROOT_USER=minioadmin ^
+-e MINIO_ROOT_PASSWORD=minioadmin ^
+-v minio_data:/data ^
+minio/minio server /data --console-address ":9001"
+```
+
+Performed the following:
+
+- Started MinIO Server
+- Opened MinIO Console
+- Created a Bucket
+- Uploaded Files
+- Downloaded Files
+- Deleted Files
+- Explored Object Metadata
+
+---
+
+# Key Concepts Learned
+
+## Keycloak
+
+- Authentication
+- Authorization
+- Realm
+- Client
+- User
+- Role
+- JWT Token
+- OAuth 2.0
+- OpenID Connect (OIDC)
+
+## MinIO
+
+- Object Storage
+- Bucket
+- Object
+- Metadata
+- Endpoint
+- Access Key
+- Secret Key
+- Amazon S3 Compatibility
+
+---
+
+# Technologies Used
+
+- Keycloak 26.x
+- MinIO
+- Docker Desktop
+- Command Prompt
+- Windows 11
+
+---
+
+# Learning Outcome
+
+Through this task, I gained a practical understanding of identity management using Keycloak and object storage using MinIO. I learned how authentication systems manage users and roles, and how object storage is used to securely store and manage application files. This hands-on practice provided a strong foundation for integrating these technologies into backend applications.
+
+---
+
