@@ -1,0 +1,21 @@
+// Prisma schema file
+// This tells Prisma how to connect to your database
+// and what your data looks like (the "model")
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  // Reads the DATABASE_URL from your .env file
+  url      = env("DATABASE_URL")
+}
+
+// The Product model maps to a "products" table in PostgreSQL
+model Product {
+  id        Int      @id @default(autoincrement()) // auto-incrementing primary key
+  name      String   // product name
+  price     Float    // product price
+  createdAt DateTime @default(now())               // timestamp added automatically
+}
